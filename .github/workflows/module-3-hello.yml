@@ -1,0 +1,17 @@
+name: Just Print
+
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+    print-job:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: print hello
+              run: echo "Hello World!"
+
+            - name: list files
+              run: ls -la
